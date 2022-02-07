@@ -1,0 +1,69 @@
+/* Набор цветов
+#bcc4db
+#59656f
+#109648
+#f25f5c
+#ddf45b */
+
+/*
+
+* - универсальный селектор
+селектор тега
+селектор класса
+селектор атрибута
+  селектор родителя
+  селектор ребенка
+    селектор предка
+    селектор потомка
+селектор идентификатора
+сестринский селектор
+ */
+
+/*
+* {
+    color: red;
+}  */
+
+/* 1 */
+body {
+  font-size: 12px;
+  background-color: #f25f5c;
+}
+/* 10 */
+.hero-title {
+  color: blueviolet;
+}
+/* 1 */
+h2 {
+  color: red;
+}
+/* 10 */
+.text {
+  /* font-size: 50px; */
+}
+
+/* 10 */
+[href="https://youtube.com"]
+{
+  font-weight: 700;
+  text-decoration: none;
+  color: chartreuse;
+}
+
+/* 20 */
+.hero > .text {
+  /* font-size: 14px; */
+  text-decoration: overline;
+}
+
+/* 100 */
+#hero {
+  background-color: rgb(34, 109, 207);
+}
+
+/* 20 */
+/* .nav-item + .nav-item {
+  margin-right: 50px;
+} */
+
+

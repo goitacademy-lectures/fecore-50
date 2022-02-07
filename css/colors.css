@@ -1,0 +1,20 @@
+/* Набор цветов
+#bcc4db
+#59656f
+#109648
+#f25f5c
+#ddf45b */
+
+.page {
+  font-size: 20px;
+  color: rgb(16, 150, 72);
+  background-color: #bcc4db;
+}
+
+h2 {
+  font-size: inherit;
+}
+
+.link {
+  color: currentColor;
+}
