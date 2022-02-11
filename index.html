@@ -4,194 +4,251 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 1 - BarberShop</title>
+    <title>Module 2 - BarberShop</title>
+    <!-- Основные шрифты -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Кастомные стили -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- Шапка сайта -->
-    <header>
-      <a href="./index.html">
-        <img src="./images/icons/logo.svg" alt="Лого" width="68" height="55" />
+    <header class="header">
+      <a class="header-link" href="./index.html">
+        <img class="header-logo" src="./images/icons/logo.svg" alt="Лого" width="68" height="55" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="">О нас</a></li>
-          <li><a href="">Услуги и цены</a></li>
-          <li><a href="">Мастера</a></li>
-          <li><a href="">Контакты</a></li>
+      <nav class="nav">
+        <ul class="nav-list list">
+          <li class="nav-item">
+            <a class="nav-link link" href="">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Услуги и цены</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Мастера</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link" href="">Контакты</a>
+          </li>
         </ul>
       </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <button type="button">онлайн-запись</button>
+      <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
+      <button class="main-btn main-btn-mode-dark" type="button">онлайн-запись</button>
     </header>
 
     <!-- Уникальный контент -->
     <main>
       <!-- Секция Герой -->
-      <section>
-        <ul>
-          <li><a href="" lang="en">Instagram</a></li>
-          <li><a href="" lang="en">Youtube</a></li>
+      <section class="hero">
+        <ul class="hero-list list">
+          <li class="hero-item">
+            <a class="public-link link" href="" lang="en">Instagram</a>
+          </li>
+          <li class="hero-item">
+            <a class="public-link link" href="" lang="en">Youtube</a>
+          </li>
         </ul>
-        <p lang="en">A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.</p>
+        <p class="uppertitle uppertitle-mode-dark" lang="en">A hair salon for men in Kyiv</p>
+        <h1 class="hero-title">BarberShop</h1>
+        <p class="subtitle subtitle-mode-dark">
+          Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и со вкусом.
+        </p>
 
-        <ul>
-          <li><button type="button">Назад</button></li>
-          <li><button type="button">Вперед</button></li>
+        <ul class="hero-list list">
+          <li class="hero-item">
+            <button class="hero-btn hero-btn-disable" type="button">Назад</button>
+          </li>
+          <li class="hero-item">
+            <button class="hero-btn" type="button">Вперед</button>
+          </li>
         </ul>
       </section>
 
       <!-- Секция О нас -->
-      <section>
-        <ul>
-          <li>
-            <img src="./images/about/img-1.jpg" alt="Бритье бороды" width="270" height="445" />
+      <section class="about">
+        <ul class="about-list list">
+          <li class="about-item">
+            <img class="about-img" src="./images/about/img-1.jpg" alt="Бритье бороды" width="270" height="445" />
           </li>
-          <li>
-            <img src="./images/about/img-2.jpg" alt="Стрижка под опасную бритву" width="270" height="445" />
+          <li class="about-item">
+            <img
+              class="about-img"
+              src="./images/about/img-2.jpg"
+              alt="Стрижка под опасную бритву"
+              width="270"
+              height="445"
+            />
           </li>
         </ul>
-        <p>О нас</p>
-        <h2>Лучший Барбершоп твоего города</h2>
-        <h3>Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.</h3>
-        <p>
+        <p class="uppertitle uppertitle-mode-light">О нас</p>
+        <h2 class="title title-mode-light">Лучший Барбершоп твоего города</h2>
+        <h3 class="subtitle subtitle-mode-light">
+          Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+        </h3>
+        <p class="about-descr">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
           нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
           волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
         </p>
-        <button type="button">онлайн-запись</button>
+        <button class="main-btn main-btn-mode-light" type="button">онлайн-запись</button>
       </section>
 
       <!-- Секция Услуги и цены -->
-      <section>
-        <p>Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul>
-          <li>
-            <ul>
-              <li>Мужская стрижка <span>от 300 грн.</span></li>
-              <li>Стрижка бороды <span>от 200 грн.</span></li>
-              <li>Стрижка усов <span>от 200 грн.</span></li>
-              <li>Бритье опасной бритвой <span>от 200 грн.</span></li>
+      <section class="price">
+        <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
+        <h2 class="title title-mode-dark">Услуги и цены</h2>
+        <ul class="price-list list">
+          <li class="price-item">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-inner-name">Мужская стрижка</span><span class="price-inner-cost">от 300 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Стрижка бороды</span><span class="price-inner-cost">от 200 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Стрижка усов</span><span class="price-inner-cost">от 200 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Бритье опасной бритвой</span
+                ><span class="price-inner-cost">от 200 грн.</span>
+              </li>
             </ul>
           </li>
-          <li>
-            <ul>
-              <li>Cтрижка у стажера <span>от 50 грн.</span></li>
-              <li>Стрижка под насадку <span>от 200 грн.</span></li>
-              <li>Детская стрижка (до 12 лет) <span>от 300 грн.</span></li>
-              <li>Камуфлирование седины <span>от 200 грн.</span></li>
+          <li class="price-item">
+            <ul class="price-inner-list list">
+              <li class="price-inner-item">
+                <span class="price-inner-name">Cтрижка у стажера</span>
+                <span class="price-inner-cost">от 50 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Стрижка под насадку</span>
+                <span class="price-inner-cost">от 200 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Детская стрижка (до 12 лет)</span>
+                <span class="price-inner-cost">от 300 грн.</span>
+              </li>
+              <li class="price-inner-item">
+                <span class="price-inner-name">Камуфлирование седины</span>
+                <span class="price-inner-cost">от 200 грн.</span>
+              </li>
             </ul>
           </li>
         </ul>
-        <button type="button">онлайн-запись</button>
+        <button class="main-btn main-btn-mode-dark" type="button">онлайн-запись</button>
       </section>
 
       <!-- Секция Преимущества -->
-      <section>
-        <ul>
-          <li>
-            <p>600</p>
-            <p>Довольных клиентов в день</p>
+      <section class="advantages">
+        <ul class="advantages-list list">
+          <li class="advantages-item">
+            <p class="advantages-quantity">600</p>
+            <p class="advantages-descr">Довольных клиентов в день</p>
           </li>
-          <li>
-            <p>20</p>
-            <p>Лучших мастеров Киева</p>
+          <li class="advantages-item">
+            <p class="advantages-quantity">20</p>
+            <p class="advantages-descr">Лучших мастеров Киева</p>
           </li>
-          <li>
-            <p>50</p>
-            <p>Наград за отличный сервис</p>
+          <li class="advantages-item">
+            <p class="advantages-quantity">50</p>
+            <p class="advantages-descr">Наград за отличный сервис</p>
           </li>
-          <li>
-            <p>100</p>
-            <p>Подарков постоянным клиентам</p>
+          <li class="advantages-item">
+            <p class="advantages-quantity">100</p>
+            <p class="advantages-descr">Подарков постоянным клиентам</p>
           </li>
         </ul>
-        <p>старая традиционная школа</p>
-        <h2>Почему приходят именно к нам?</h2>
-        <p>О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.</p>
+        <p class="uppertitle uppertitle-mode-light">старая традиционная школа</p>
+        <h2 class="title title-mode-light">Почему приходят именно к нам?</h2>
+        <p class="subtitle subtitle-mode-light">
+          О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать.
+        </p>
       </section>
 
       <!-- Секция Мастера -->
-      <section>
-        <p>для настоящих ценителей атмосферы</p>
-        <h2>Наши мастера</h2>
-        <ul>
-          <li>
-            <img src="./images/masters/img1.jpg" alt="John Smith" width="370" height="346" />
-            <h3>John Smith</h3>
-            <p lang="en">Extreme Barber</p>
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">LinkedIn</a></li>
+      <section class="team">
+        <p class="uppertitle uppertitle-mode-light">для настоящих ценителей атмосферы</p>
+        <h2 class="title title-mode-light">Наши мастера</h2>
+        <ul class="team-list list">
+          <li class="team-member">
+            <img class="team-avatar" src="./images/masters/img1.jpg" alt="John Smith" width="370" height="346" />
+            <h3 class="team-headline">John Smith</h3>
+            <p class="team-position" lang="en">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
             </ul>
           </li>
-          <li>
-            <img src="./images/masters/img2.jpg" alt="Michele Doe" width="370" height="346" />
-            <h3>Michele Doe</h3>
-            <p lang="en">Extreme Barber</p>
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">LinkedIn</a></li>
+          <li class="team-member">
+            <img class="team-avatar" src="./images/masters/img2.jpg" alt="Michele Doe" width="370" height="346" />
+            <h3 class="team-headline">Michele Doe</h3>
+            <p class="team-position" lang="en">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
             </ul>
           </li>
-          <li>
-            <img src="./images/masters/img3.jpg" alt="Alan Black" width="370" height="346" />
-            <h3>Alan Black</h3>
-            <p lang="en">Extreme Barber</p>
-            <ul>
-              <li><a href="">Instagram</a></li>
-              <li><a href="">Twitter</a></li>
-              <li><a href="">Facebook</a></li>
-              <li><a href="">LinkedIn</a></li>
+          <li class="team-member">
+            <img class="team-avatar" src="./images/masters/img3.jpg" alt="Alan Black" width="370" height="346" />
+            <h3 class="team-headline">Alan Black</h3>
+            <p class="team-position" lang="en">Extreme Barber</p>
+            <ul class="socials list">
+              <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
+              <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
             </ul>
           </li>
         </ul>
       </section>
 
       <!-- Секция Галерея -->
-      <section>
-        <p>На латинском языке “барба” означает “борода”</p>
+      <section class="gallery">
+        <p class="uppertitle uppertitle-mode-light">На латинском языке “барба” означает “борода”</p>
         <h2 hidden>Галерея Барбершопа</h2>
-        <ul>
-          <li>
-            <img src="./images/gallery/pic-1.jpg" alt="" width="270" height="360" />
+        <ul class="gallery-list list">
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/pic-1.jpg" alt="" width="270" height="360" />
           </li>
-          <li>
-            <img src="./images/gallery/pic-2.jpg" alt="" width="270" height="360" />
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/pic-2.jpg" alt="" width="270" height="360" />
           </li>
-          <li>
-            <img src="./images/gallery/pic-3.jpg" alt="" width="270" height="360" />
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/pic-3.jpg" alt="" width="270" height="360" />
           </li>
-          <li>
-            <img src="./images/gallery/pic-4.jpg" alt="" width="270" height="360" />
+          <li class="gallery-item">
+            <img class="gallery-img" src="./images/gallery/pic-4.jpg" alt="" width="270" height="360" />
           </li>
         </ul>
       </section>
 
       <!-- Секция Контакты -->
-      <section>
-        <h2>Контакты</h2>
-        <ul>
-          <li>
-            <address>ул. Васильковая, 7А Киев, 08132</address>
+      <section class="contacts">
+        <h2 class="title title-mode-dark">Контакты</h2>
+        <ul class="contacts-list list">
+          <li class="contacts-item">
+            <address class="contacts-address">ул. Васильковая, 7А Киев, 08132</address>
           </li>
-          <li>
-            <a href="tel:+380441111111">+38 044 111 11 11</a>
+          <li class="contacts-item">
+            <a class="contacts-link link" href="tel:+380441111111">+38 044 111 11 11</a>
           </li>
-          <li>
-            <a href="mailto:barbershop@email.com">barbershop@email.com</a>
+          <li class="contacts-item">
+            <a class="contacts-link link" href="mailto:barbershop@email.com">barbershop@email.com</a>
           </li>
         </ul>
 
-        <h3>время работы</h3>
-        <p>
+        <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
+        <p class="contacts-schedule">
           Ежедневно с <time datetime="9:00">9:00</time> до
           <time datetime="22:00">22:00</time>
         </p>
@@ -199,14 +256,14 @@
     </main>
 
     <!-- Подвал сайта -->
-    <footer>
-      <p>&#169; Copyright 2020</p>
-      <ul>
-        <li>
-          <a href="">Instagram</a>
+    <footer class="footer">
+      <p class="footer-copyright">&#169; Copyright 2020</p>
+      <ul class="footer-list list">
+        <li class="footer-item">
+          <a class="public-link link" href="">Instagram</a>
         </li>
-        <li>
-          <a href="">Youtube</a>
+        <li class="footer-item">
+          <a class="public-link link" href="">Youtube</a>
         </li>
       </ul>
     </footer>
