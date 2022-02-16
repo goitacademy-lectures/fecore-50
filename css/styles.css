@@ -33,7 +33,26 @@ body {
   color: var(--main-txt--mode-light);
 }
 
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+p:last-child {
+  margin-bottom: 0;
+}
+
 .list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
   list-style: none;
 }
 
@@ -41,7 +60,22 @@ body {
   text-decoration: none;
 }
 
+.section {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .uppertitle {
+  margin-bottom: 20px;
+
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
@@ -58,6 +92,8 @@ body {
 }
 
 .title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 42px;
@@ -75,17 +111,11 @@ body {
   color: var(--primary-txt--mode-dark);
 }
 
-/* .description {
-font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-} */
-
 .subtitle {
+  margin-bottom: 20px;
+
   font-size: 18px;
+  font-weight: 400;
   line-height: 1.67;
   letter-spacing: 0.02em;
 }
@@ -99,6 +129,10 @@ font-weight: 600;
 }
 
 .main-btn {
+  max-width: 350px;
+  min-width: 160px;
+  padding: 12px 20px;
+
   font-family: inherit;
   font-weight: 600;
   font-size: 12px;
@@ -106,6 +140,8 @@ font-weight: 600;
   letter-spacing: 0.09em;
   text-transform: uppercase;
 
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
 }
@@ -140,8 +176,38 @@ font-weight: 600;
 
 /* Header */
 .header {
+  padding-top: 32px;
+  padding-bottom: 32px;
   background-color: var(--primary-bg--mode-dark);
 }
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-link {
+  margin-right: 70px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 40px;
+}
+
+.nav-item:last-child {
+  margin: 0;
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
 .nav-link,
 .header-phone {
   font-weight: 600;
@@ -158,6 +224,7 @@ font-weight: 600;
 }
 
 .header-phone {
+  margin-right: 40px;
   text-transform: uppercase;
 }
 .header-phone:hover,
@@ -170,7 +237,21 @@ font-weight: 600;
   background-color: var(--primary-bg--mode-dark);
 }
 
+.hero-list {
+  display: flex;
+  align-items: center;
+}
+
+.hero-item {
+  margin-right: 40px;
+}
+.hero-item:last-child {
+  margin: 0;
+}
+
 .hero-title {
+  margin-bottom: 20px;
+
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 72px;
@@ -178,6 +259,10 @@ font-weight: 600;
 
   letter-spacing: 0.05em;
   color: var(--primary-txt--mode-dark);
+}
+
+.hero .subtitle {
+  margin-bottom: 0;
 }
 
 .hero-btn {
@@ -196,7 +281,29 @@ font-weight: 600;
 }
 
 /* About us */
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  margin-right: 30px;
+}
+.about-item:last-child {
+  margin-right: 0;
+}
+
+.about-wrapper {
+  width: 500px;
+  margin-left: auto;
+}
+
 .about-descr {
+  margin-bottom: 40px;
+
   font-size: 14px;
   line-height: 1.86;
   letter-spacing: 0.02em;
@@ -209,9 +316,44 @@ font-weight: 600;
   background-color: var(--secondary-bg--mode-dark);
 }
 
+.price .title {
+  margin-bottom: 44px;
+}
+
+.price-list {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+.price-item {
+  outline: 1px solid red;
+  flex-basis: calc(100% / 2);
+  padding: 30px 40px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.price-inner-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.price-inner-item:last-child {
+  margin-bottom: 0;
+}
+
 .price-inner-name,
 .price-inner-cost {
   color: var(--main-txt--mode-dark);
+}
+
+.price .main-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Advantages */
@@ -276,4 +418,32 @@ font-weight: 600;
 |--------------------------------------------------
 */
   --secondary-txt--mode-dark: #ffffff;
+}
+
+.footer {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+
+.footer-item {
+  margin-right: 40px;
+}
+
+.footer-item:last-child {
+  margin-right: 0;
+}
+
+.footer-copyright {
+  margin-bottom: 0;
 }
