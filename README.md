@@ -1,11 +1,15 @@
 # FE50-theory
 
-Занятие 6:
-- Свойство display:flex|inline-flex
-- flex-контейнер и flex-элемент
-- Flex-оси и свойство flex-direction
-- Выравнивание flex-элементов на оси, свойства justify-content, align-items
-- Многострочные flex-контейнеры и свойство flex-wrap
-- Свойства flex-элемента: width и flex-basis, flex-grow, flex-shrink
+Занятие 7:
+- Типы растровой графики: jpg, png, webp
+- Контентные и декоративные изображения
+- Свойства bg-color, bg-image, bg-repeat, bg-position, bg-size, bg-attachment
+- Многослойный фон
+- Псевдоэлементы ::before и ::after
+- Градиенты
+- CSS-тени и свойство box-shadow
 
-[Ссылка на макет](https://www.figma.com/file/Q30fUPk88NasVE5g3XNDxr/Barbershop_v1?node-id=1%3A2)
+- Векторная графика
+- Основные SVG-фигуры
+- Способы использования SVG: img, фон, inline
+- Создание и работа с SVG-спрайтом
