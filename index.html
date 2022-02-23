@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 2 - BarberShop</title>
+    <title>Module 4 - BarberShop</title>
     <!-- Основные шрифты -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -41,12 +41,33 @@
             </li>
           </ul>
         </nav>
-       <div class="header-wrapper">
-        <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
-        <button class="main-btn main-btn-mode-dark" type="button">онлайн-запись</button>
-       </div>
+        <div class="header-wrapper">
+          <a class="header-phone link" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="main-btn main-btn-mode-dark" type="button">онлайн-запись</button>
+        </div>
       </div>
     </header>
+
+    <div class="contacts-row container">
+      <ul class="list">
+        <li class="item">
+          <a class="link " href="">
+            <svg class="icon" width="16" height="12">
+              <use href="./images/icons/contacts/symbol-defs.svg#envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="item">
+          <a class="link " href="">
+            <svg class="icon" width="10" height="16">
+              <use href="./images/icons/contacts/symbol-defs.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Уникальный контент -->
     <main>
@@ -95,19 +116,19 @@
               />
             </li>
           </ul>
-         <div class="about-wrapper">
-          <p class="uppertitle uppertitle-mode-light">О нас</p>
-          <h2 class="title title-mode-light">Лучший Барбершоп твоего города</h2>
-          <h3 class="subtitle subtitle-mode-light">
-            Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
-          </h3>
-          <p class="about-descr">
-            Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
-            нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
-            волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
-          </p>
-          <button class="main-btn main-btn-mode-light" type="button">онлайн-запись</button>
-         </div>
+          <div class="about-wrapper">
+            <p class="uppertitle uppertitle-mode-light">О нас</p>
+            <h2 class="title title-mode-light">Лучший Барбершоп твоего города</h2>
+            <h3 class="subtitle subtitle-mode-light">
+              Если ты хочешь добавить в свой образ больше уверенности – тебе точно к нам.
+            </h3>
+            <p class="about-descr">
+              Мы команда, которая никогда не останавливается на достигнутом и жаждет перемен. И когда ты попадешь в руки
+              нашего мастера, то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
+              волне". Поэтому, мы всегда готовы усовершенствовать каждого, кто к нам приходит!
+            </p>
+            <button class="main-btn main-btn-mode-light" type="button">онлайн-запись</button>
+          </div>
         </div>
       </section>
 
@@ -117,7 +138,7 @@
           <p class="uppertitle uppertitle-mode-dark">Проведи время в компании лучших мастеров</p>
           <h2 class="title title-mode-dark">Услуги и цены</h2>
           <ul class="price-list list">
-            <li class="price-item">
+            <li class="price-item price-item-left-side">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">
                   <span class="price-inner-name">Мужская стрижка</span><span class="price-inner-cost">от 300 грн.</span>
@@ -134,7 +155,7 @@
                 </li>
               </ul>
             </li>
-            <li class="price-item">
+            <li class="price-item price-item-right-side">
               <ul class="price-inner-list list">
                 <li class="price-inner-item">
                   <span class="price-inner-name">Cтрижка у стажера</span>
@@ -196,36 +217,114 @@
           <ul class="team-list list">
             <li class="team-member">
               <img class="team-avatar" src="./images/masters/img1.jpg" alt="John Smith" width="370" height="346" />
-              <h3 class="team-headline">John Smith</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-headline">John Smith</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-instagram link" href="" aria-label="Instagram">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-twitter link" href="" aria-label="Twitter">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-facebook link" href="" aria-label="Facebook">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-linkedin link" href="" aria-label="Linkedin">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-member">
               <img class="team-avatar" src="./images/masters/img2.jpg" alt="Michele Doe" width="370" height="346" />
-              <h3 class="team-headline">Michele Doe</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-headline">Michele Doe</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-instagram link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-twitter link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-facebook link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-linkedin link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
             <li class="team-member">
               <img class="team-avatar" src="./images/masters/img3.jpg" alt="Alan Black" width="370" height="346" />
-              <h3 class="team-headline">Alan Black</h3>
-              <p class="team-position" lang="en">Extreme Barber</p>
-              <ul class="socials list">
-                <li class="socials-item"><a class="socials-link link" href="">Instagram</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Twitter</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">Facebook</a></li>
-                <li class="socials-item"><a class="socials-link link" href="">LinkedIn</a></li>
-              </ul>
+              <div class="team-wrapper">
+                <h3 class="team-headline">Alan Black</h3>
+                <p class="team-position" lang="en">Extreme Barber</p>
+                <ul class="socials list">
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-instagram link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-twitter link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-facebook link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="socials-item">
+                    <a class="socials-link socials-link-linkedin link" href="">
+                      <svg class="socials-icon" width="22" height="22">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </div>
