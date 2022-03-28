@@ -244,6 +244,7 @@ img {
 .hero-list {
   display: flex;
   align-items: center;
+  position: relative;
 }
 
 .hero-item {
