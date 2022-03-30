@@ -21,6 +21,10 @@
   /* Темная тема фона*/
   --primary-bg--mode-dark: #191c26;
   --secondary-bg--mode-dark: #111319;
+
+  /* Остальные эффекты */
+  --anim-fast: 250ms ease-in;
+  --anim-slow: 500ms ease-in-out;
 }
 
 /* Common styles */
@@ -75,9 +79,13 @@ img {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+
+  /* outline: 1px solid red; */
 }
 
 .uppertitle {
+  display: flex;
+  align-items: center;
   margin-bottom: 20px;
 
   font-weight: 600;
@@ -93,6 +101,15 @@ img {
 
 .uppertitle-mode-dark {
   color: var(--secondary-txt--mode-dark);
+}
+
+.uppertitle::before {
+  display: block;
+  margin-right: 20px;
+  content: "";
+  width: 60px;
+  height: 1px;
+  background-color: var(--secondary-txt--mode-light);
 }
 
 .title {
@@ -148,6 +165,8 @@ img {
   border-radius: 25px;
   background-color: transparent;
   cursor: pointer;
+
+  transition: background-color var(--anim-slow), border-color var(--anim-slow);
 }
 
 .main-btn-mode-light {
@@ -161,7 +180,7 @@ img {
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--accent-cl);
-  border: 1px solid var(--accent-cl);
+  border-color: var(--accent-cl);
 }
 
 .public-link {
@@ -220,6 +239,8 @@ img {
   letter-spacing: 0.1em;
 
   color: var(--primary-txt--mode-dark);
+
+  transition: color var(--anim-fast);
 }
 
 .nav-link:hover,
@@ -322,7 +343,7 @@ img {
 
   background-image: url(../images/price/bg-price.png);
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -345,16 +366,25 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
 }
 .price-item-left-side {
-  background-image: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
 }
 
 .price-item-right-side {
-  background-image: linear-gradient(180deg, #090b13 0%, rgba(9, 11, 19, 0.2) 100%);
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
 }
 
 .price-inner-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  align-items: baseline;
   margin-bottom: 20px;
 }
 
@@ -362,9 +392,33 @@ img {
   margin-bottom: 0;
 }
 
+.price-inner-item::after {
+  content: "";
+  display: block;
+  margin: 0 6px;
+  /* width: 100%; */
+  height: 1px;
+
+  background-color: rgba(157, 164, 189, 0.12);
+
+  /* Вариант оформления через свойство элемента занимать
+  все доступное пространство внутри флекс-контейнера */
+  flex-grow: 1;
+}
+
 .price-inner-name,
 .price-inner-cost {
   color: var(--main-txt--mode-dark);
+
+  /* Вариант оформления через запрет на сжатие элемента
+  внутри флекс-контейнера */
+  flex-shrink: 0;
+}
+
+.price-inner-cost {
+  /* Изменение порядка элемента внутри флекс-контейнера
+  чем больше значение, тем дальше элемент в очереди */
+  order: 2;
 }
 
 .price .main-btn {
@@ -374,13 +428,81 @@ img {
 }
 
 /* Advantages */
+.advantages-container {
+  display: flex;
+  gap: 30px;
+}
+
+.advantages-left-side,
+.advantages-right-side {
+  flex-basis: 50%;
+}
+
+.advantages-list {
+  width: 370px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.advantages-item {
+  width: 170px;
+  min-height: 133px;
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: var(--secondary-bg--mode-light);
+}
+
+.advantages-item:nth-child(odd) {
+  margin-right: 30px;
+}
+
+.advantages-item:first-child {
+  margin-bottom: 30px;
+}
+
+.advantages-item:nth-last-child(odd) {
+  margin-top: 30px;
+}
+
 .advantages-quantity {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 6px;
+
   font-weight: 700;
   font-size: 42px;
   line-height: 1.36;
   letter-spacing: 0.05em;
 
   color: var(--secondary-txt--mode-light);
+}
+
+.advantages-quantity::after {
+  position: absolute;
+  top: 5px;
+  /* right: -13px; */
+  left: calc(100% + 2px);
+  content: "+";
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.37;
+  text-align: center;
+
+  color: #ff6c00;
+}
+
+.advantages-descr {
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0;
+
+  color: #303030;
 }
 
 /* Team */
@@ -402,6 +524,35 @@ img {
   margin-right: 30px;
 
   text-align: center;
+}
+
+.team-thumb {
+  position: relative;
+  cursor: help;
+
+  overflow: hidden;
+}
+
+.team-descr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  color: white;
+  background-color: rgba(9, 11, 19, 0.5);
+
+  transform: translateX(100%);
+  transition: transform var(--anim-slow);
+}
+
+.team-thumb:hover .team-descr {
+  transform: translateX(0);
 }
 
 .team-wrapper {
@@ -448,6 +599,8 @@ img {
 
   color: var(--secondary-txt--mode-light);
 
+  transition: background-color var(--anim-fast);
+
   /* =======
   Добавление иконки через свойство background-image
   можно встретить такую запись, но не часто
@@ -472,6 +625,8 @@ img {
 
 .socials-icon {
   fill: var(--secondary-txt--mode-light);
+
+  transition: fill var(--anim-fast);
 }
 
 /* =======
@@ -579,7 +734,6 @@ img {
   margin-bottom: 0;
 }
 
-
 .contacts-row .list {
   display: flex;
   align-items: center;
@@ -593,6 +747,8 @@ img {
   display: flex;
   align-items: center;
   color: #303030;
+
+  transition: color var(--anim-fast);
 }
 
 .contacts-row .link:hover,
@@ -603,4 +759,114 @@ img {
 .contacts-row .icon {
   margin-right: 10px;
   fill: currentColor;
+}
+
+/* modal window */
+.backdrop {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  background-color: rgba(9, 11, 19, 0.6);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+
+  transition: opacity var(--anim-slow), visibility var(--anim-slow);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 500px;
+  height: 400px;
+  padding: 25px;
+
+  border-radius: 15px;
+
+  background-color: #fff;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+}
+
+/* pulsation animation for button */
+.pulsate {
+  position: relative;
+  z-index: 10;
+
+  background-color: #ff6c00;
+}
+
+.pulsate span {
+  position: relative;
+  z-index: 10;
+}
+
+.pulsate::after,
+.pulsate::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+
+  transform-origin: center;
+  opacity: 0;
+}
+
+.pulsate::before {
+  /* background-color: rgba(255, 106, 0, 0.8); */
+  box-shadow: inset 0px 0px 20px rgba(255, 106, 0, 0.3),
+    inset 0px 0px 15px rgba(255, 106, 0, 0.3),
+    0px 0px 15px rgba(255, 106, 0, 0.3), 0px 0px 10px rgba(255, 106, 0, 0.3);
+  animation: pulsation 5s infinite;
+}
+
+.pulsate::after {
+  /* background-color: rgba(255, 106, 0, 0.6); */
+  box-shadow: inset 0px 0px 25px rgba(255, 106, 0, 0.4),
+    inset 0px 0px 20px rgba(255, 106, 0, 0.4),
+    0px 0px 20px rgba(255, 106, 0, 0.2), 0px 0px 15px rgba(255, 106, 0, 0.2);
+  animation: pulsation 5s 200ms infinite forwards;
+}
+
+@keyframes pulsation {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
+
+  20% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 1;
+  }
+
+  30% {
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+  }
 }
