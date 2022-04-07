@@ -4,25 +4,25 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 4 - BarberShop</title>
-    <!-- Основные шрифты -->
+    <title>Module 6 - BarberShop</title>
+    <!-- Основні шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
       rel="stylesheet"
     />
-    <!-- Нормализация стилей -->
+    <!-- Нормалізація стилей -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
 
-    <!-- Кастомные стили -->
+    <!-- Кастомні стили -->
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <!-- Шапка сайта -->
+    <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-container">
         <a class="header-link" href="./index.html">
@@ -92,7 +92,7 @@
 
     <!-- Уникальный контент -->
     <main>
-      <!-- Секция Герой -->
+      <!-- Секція Герой -->
       <section class="hero">
         <div class="container">
           <ul class="hero-list list">
@@ -125,7 +125,7 @@
         </div>
       </section>
 
-      <!-- Секция О нас -->
+      <!-- Секція Про нас -->
       <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
@@ -171,7 +171,7 @@
         </div>
       </section>
 
-      <!-- Секция Услуги и цены -->
+      <!-- Секція Послуги та ціни -->
       <section class="price section">
         <div class="container">
           <p class="uppertitle uppertitle-mode-dark">
@@ -228,7 +228,7 @@
         </div>
       </section>
 
-      <!-- Секция Преимущества -->
+      <!-- Секція Переваги -->
       <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
@@ -267,7 +267,7 @@
         </div>
       </section>
 
-      <!-- Секция Мастера -->
+      <!-- Секція Майстри -->
       <section class="team section">
         <div class="container">
           <p class="uppertitle uppertitle-mode-light">
@@ -341,13 +341,20 @@
               </div>
             </li>
             <li class="team-member">
-              <img
-                class="team-avatar"
-                src="./images/masters/img2.jpg"
-                alt="Michele Doe"
-                width="370"
-                height="346"
-              />
+              <div class="team-thumb">
+                <img
+                  class="team-avatar"
+                  src="./images/masters/img2.jpg"
+                  alt="Michele Doe"
+                  width="370"
+                  height="346"
+                />
+                <p class="team-descr">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur enim ipsa error incidunt aliquam quasi?
+                </p>
+              </div>
+
               <div class="team-wrapper">
                 <h3 class="team-headline">Michele Doe</h3>
                 <p class="team-position" lang="en">Extreme Barber</p>
@@ -384,13 +391,19 @@
               </div>
             </li>
             <li class="team-member">
-              <img
-                class="team-avatar"
-                src="./images/masters/img3.jpg"
-                alt="Alan Black"
-                width="370"
-                height="346"
-              />
+              <div class="team-thumb">
+                <img
+                  class="team-avatar"
+                  src="./images/masters/img3.jpg"
+                  alt="Alan Black"
+                  width="370"
+                  height="346"
+                />
+                <p class="team-descr">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Consequuntur enim ipsa error incidunt aliquam quasi?
+                </p>
+              </div>
               <div class="team-wrapper">
                 <h3 class="team-headline">Alan Black</h3>
                 <p class="team-position" lang="en">Extreme Barber</p>
@@ -430,7 +443,7 @@
         </div>
       </section>
 
-      <!-- Секция Галерея -->
+      <!-- Секція Галерея -->
       <section class="gallery section">
         <div class="container">
           <p class="uppertitle uppertitle-mode-light">
@@ -478,38 +491,136 @@
         </div>
       </section>
 
-      <!-- Секция Контакты -->
+      <!-- Секція Контакти -->
       <section class="contacts section">
-        <div class="container">
-          <h2 class="title title-mode-dark">Контакты</h2>
-          <ul class="contacts-list list">
-            <li class="contacts-item">
-              <address class="contacts-address">
-                ул. Васильковая, 7А Киев, 08132
-              </address>
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="tel:+380441111111"
-                >+38 044 111 11 11</a
-              >
-            </li>
-            <li class="contacts-item">
-              <a class="contacts-link link" href="mailto:barbershop@email.com"
-                >barbershop@email.com</a
-              >
-            </li>
-          </ul>
+        <div class="container contacts-container">
+          <div class="contacts-left-side">
+            <h2 class="title title-mode-dark">Онлайн-запись</h2>
+            <form action="" class="form contacts-form">
+              <div class="form-group">
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="text"
+                    minlenght="3"
+                    placeholder=" "
+                  />
+                  <span class="form-caption">Имя&#42;</span>
+                </label>
 
-          <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
-          <p class="contacts-schedule">
-            Ежедневно с <time datetime="9:00">9:00</time> до
-            <time datetime="22:00">22:00</time>
-          </p>
+                <label class="form-label">
+                  <input
+                    class="form-input"
+                    type="tel"
+                    required
+                    placeholder=" "
+                  />
+                  <span class="form-caption">Телефон&#42;</span>
+                </label>
+              </div>
+
+              <label class="form-field">
+                <textarea
+                  class="form-message"
+                  name="message"
+                  rows="5"
+                  placeholder="Введите текст..."
+                ></textarea>
+                <span class="form-caption">сообщение</span>
+              </label>
+
+              <label class="form-agreement">
+                <input
+                  class="form-agreement-input visually-hidden"
+                  type="checkbox"
+                  name="agreement"
+                  checked
+                  aria-hidden="true"
+                  tabindex="-1"
+                />
+                <svg
+                  class="form-agreement-checkbox"
+                  tabindex="0"
+                  role="checkbox"
+                  width="28"
+                  height="28"
+                >
+                  <use
+                    id="icon-outlined"
+                    href="./images/icons.svg#icon-checkbox-outline"
+                  ></use>
+                  <use
+                    id="icon-checked"
+                    href="./images/icons.svg#icon-checkbox-checked"
+                  ></use>
+                </svg>
+                <span class="form-agreement-text">
+                  Соглашаюсь с рассылкой и принимаю&nbsp;
+                  <a class="link form-agreement-link" href=""
+                    >Условия договора</a
+                  >
+                </span>
+              </label>
+
+              <!-- <div class="switcher">
+              <label class="form-switcher">
+                <input class="form-switcher-input" type="checkbox">
+                <span class="toggler"></span>
+                <span class="cirle" role="checkbox"></span>
+              </label>
+              <span class="form-switcher-text">Off</span>
+             </div> -->
+              <button
+                class="main-btn main-btn-mode-dark form-btn"
+                type="submit"
+              >
+                отправить
+              </button>
+            </form>
+          </div>
+          <div class="contacts-right-side">
+            <h2 class="title title-mode-dark">Контакты</h2>
+            <ul class="contacts-list list">
+              <li class="contacts-item">
+                <address class="contacts-address">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-map-pin"></use>
+                  </svg>
+                  ул. Васильковая, 7А Киев, 08132
+                </address>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link link" href="tel:+380441111111">
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-phone"></use>
+                  </svg>
+                  +38 044 111 11 11</a
+                >
+              </li>
+              <li class="contacts-item">
+                <a
+                  class="contacts-link link"
+                  href="mailto:barbershop@email.com"
+                >
+                  <svg class="contacts-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-mail"></use>
+                  </svg>
+                  barbershop@email.com</a
+                >
+              </li>
+            </ul>
+
+            <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
+            <p class="contacts-schedule">
+              Ежедневно с <time datetime="9:00">9:00</time> до
+              <time datetime="22:00">22:00</time>
+            </p>
+          </div>
         </div>
       </section>
     </main>
 
-    <!-- Подвал сайта -->
+    <!-- Підвал сайту -->
     <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
@@ -524,7 +635,7 @@
       </div>
     </footer>
 
-    <!-- Модальное окно -->
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-wrapper">
         <button class="modal-btn" type="button" data-modal-close>X</button>
@@ -536,5 +647,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/form-btn.js"></script>
   </body>
 </html>
