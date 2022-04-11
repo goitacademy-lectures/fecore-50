@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,QAAQ,AAAC,CACP,KAAK,CAAE,GAAG,CACX,ACFD,AAAA,QAAQ,AAAC,CACP,KAAK,CAAE,GAAG,CACX,ACFD,AAAA,QAAQ,AAAC,CACP,KAAK,CAAE,GAAG,CACX",
+    "sources": [
+        "../sass/main.scss",
+        "../sass/components/_container.scss",
+        "../sass/variables/_variables.scss",
+        "../sass/utils/_normalize.scss"
+    ],
+    "names": [],
+    "file": "main.min.css"
+}

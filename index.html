@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Module 6 - BarberShop</title>
+    <title>Module 7 - BarberShop</title>
     <!-- Основні шрифти -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,10 +24,10 @@
   <body>
     <!-- Шапка сайту -->
     <header class="header">
-      <div class="container header-container">
-        <a class="header-link" href="./index.html">
+      <div class="container header__container">
+        <a class="header__link" href="./index.html">
           <img
-            class="header-logo"
+            class="header__logo"
             src="./images/icons/logo.svg"
             alt="Лого"
             width="68"
@@ -35,27 +35,27 @@
           />
         </a>
         <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a class="nav-link link" href="">О нас</a>
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="">О нас</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Услуги и цены</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Услуги и цены</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Мастера</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Мастера</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link link" href="">Контакты</a>
+            <li class="nav__item">
+              <a class="link nav__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <div class="header-wrapper">
-          <a class="header-phone link" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
+        <div class="header__wrapper">
+          <a class="link header__phone" href="tel:+380441111111">
+            +38 044 111 11 11
+          </a>
           <button
-            class="main-btn main-btn-mode-dark pulsate"
+            class="main-btn main-btn--mode-dark pulsate"
             type="button"
             data-modal-open
           >
@@ -95,31 +95,31 @@
       <!-- Секція Герой -->
       <section class="hero">
         <div class="container">
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <a class="public-link link" href="" lang="en">Instagram</a>
+          <ul class="list hero__list">
+            <li class="hero__item">
+              <a class="link public-link" href="" lang="en">Instagram</a>
             </li>
             <li class="hero-item">
-              <a class="public-link link" href="" lang="en">Youtube</a>
+              <a class="link public-link" href="" lang="en">Youtube</a>
             </li>
           </ul>
-          <p class="uppertitle uppertitle-mode-dark" lang="en">
+          <p class="uppertitle uppertitle--mode-dark" lang="en">
             A hair salon for men in Kyiv
           </p>
-          <h1 class="hero-title">BarberShop</h1>
-          <p class="subtitle subtitle-mode-dark">
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="subtitle subtitle--mode-dark hero__subtitle">
             Мы эксперты в модных мужских стрижках. Работаем быстро, осторожно и
             со вкусом.
           </p>
 
-          <ul class="hero-list list">
-            <li class="hero-item">
-              <button class="hero-btn hero-btn-disable" type="button">
+          <ul class="list hero__list">
+            <li class="hero__item">
+              <button class="hero__btn hero__btn--disable" type="button">
                 Назад
               </button>
             </li>
-            <li class="hero-item">
-              <button class="hero-btn" type="button">Вперед</button>
+            <li class="hero__item">
+              <button class="hero__btn" type="button">Вперед</button>
             </li>
           </ul>
         </div>
@@ -149,11 +149,11 @@
             </li>
           </ul>
           <div class="about-wrapper">
-            <p class="uppertitle uppertitle-mode-light">О нас</p>
-            <h2 class="title title-mode-light">
+            <p class="uppertitle uppertitle--mode-light">О нас</p>
+            <h2 class="title title--mode-light">
               Лучший Барбершоп твоего города
             </h2>
-            <h3 class="subtitle subtitle-mode-light">
+            <h3 class="subtitle subtitle--mode-light">
               Если ты хочешь добавить в свой образ больше уверенности – тебе
               точно к нам.
             </h3>
@@ -164,7 +164,7 @@
               клиентами "на одной волне". Поэтому, мы всегда готовы
               усовершенствовать каждого, кто к нам приходит!
             </p>
-            <button class="main-btn main-btn-mode-light" type="button">
+            <button class="main-btn main-btn--mode-light" type="button">
               онлайн-запись
             </button>
           </div>
@@ -174,10 +174,10 @@
       <!-- Секція Послуги та ціни -->
       <section class="price section">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-dark">
+          <p class="uppertitle uppertitle--mode-dark">
             Проведи время в компании лучших мастеров
           </p>
-          <h2 class="title title-mode-dark">Услуги и цены</h2>
+          <h2 class="title title--mode-dark">Услуги и цены</h2>
           <ul class="price-list list">
             <li class="price-item price-item-left-side">
               <ul class="price-inner-list list">
@@ -222,7 +222,7 @@
               </ul>
             </li>
           </ul>
-          <button class="main-btn main-btn-mode-dark" type="button">
+          <button class="main-btn main-btn--mode-dark" type="button">
             онлайн-запись
           </button>
         </div>
@@ -253,13 +253,13 @@
             </ul>
           </div>
           <div class="advantages-right-side">
-            <p class="uppertitle uppertitle-mode-light">
+            <p class="uppertitle uppertitle--mode-light">
               старая традиционная школа
             </p>
-            <h2 class="title title-mode-light">
+            <h2 class="title title--mode-light">
               Почему приходят именно к нам?
             </h2>
-            <p class="subtitle subtitle-mode-light">
+            <p class="subtitle subtitle--mode-light">
               О нас говорят только хорошее. Но лучше 1 раз
               увидеть&nbsp;и&nbsp;прочувствовать, чем 10 раз прочитать.
             </p>
@@ -270,10 +270,10 @@
       <!-- Секція Майстри -->
       <section class="team section">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">
+          <p class="uppertitle uppertitle--mode-light">
             для настоящих ценителей атмосферы
           </p>
-          <h2 class="title title-mode-light">Наши мастера</h2>
+          <h2 class="title title--mode-light">Наши мастера</h2>
           <ul class="team-list list">
             <li class="team-member">
               <div class="team-thumb">
@@ -446,7 +446,7 @@
       <!-- Секція Галерея -->
       <section class="gallery section">
         <div class="container">
-          <p class="uppertitle uppertitle-mode-light">
+          <p class="uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
           </p>
           <h2 hidden>Галерея Барбершопа</h2>
@@ -495,7 +495,7 @@
       <section class="contacts section">
         <div class="container contacts-container">
           <div class="contacts-left-side">
-            <h2 class="title title-mode-dark">Онлайн-запись</h2>
+            <h2 class="title title--mode-dark">Онлайн-запись</h2>
             <form action="" class="form contacts-form">
               <div class="form-group">
                 <label class="form-label">
@@ -571,7 +571,7 @@
               <span class="form-switcher-text">Off</span>
              </div> -->
               <button
-                class="main-btn main-btn-mode-dark form-btn"
+                class="main-btn main-btn--mode-dark form-btn"
                 type="submit"
               >
                 отправить
@@ -579,7 +579,7 @@
             </form>
           </div>
           <div class="contacts-right-side">
-            <h2 class="title title-mode-dark">Контакты</h2>
+            <h2 class="title title--mode-dark">Контакты</h2>
             <ul class="contacts-list list">
               <li class="contacts-item">
                 <address class="contacts-address">
@@ -610,7 +610,7 @@
               </li>
             </ul>
 
-            <h3 class="uppertitle uppertitle-mode-dark">время работы</h3>
+            <h3 class="uppertitle uppertitle--mode-dark">время работы</h3>
             <p class="contacts-schedule">
               Ежедневно с <time datetime="9:00">9:00</time> до
               <time datetime="22:00">22:00</time>
