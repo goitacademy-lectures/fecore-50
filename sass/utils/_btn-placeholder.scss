@@ -1,0 +1,17 @@
+%btn {
+  width: 100%;
+  padding: 12px;
+
+  font-weight: 600;
+  // font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  border: 1px solid var(--accent-cl);
+  border-radius: 25px;
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: background-color var(--anim-slow), border-color var(--anim-slow);
+}

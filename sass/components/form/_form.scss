@@ -1,0 +1,126 @@
+/**
+|--------------------------------------------------
+| работа с формой
+|--------------------------------------------------
+*/
+.contacts-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field,
+.form-group,
+.form-agreement {
+  position: relative;
+
+  margin-bottom: 44px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-label {
+  position: relative;
+  flex-basis: 50%;
+}
+
+.form-label:not(:last-child) {
+  margin-right: 30px;
+}
+
+.form-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  color: var(--primary-txt--mode-dark);
+  background-color: transparent;
+  border: none;
+  outline: transparent;
+  border-bottom: 1px solid var(--border-cl-unselected);
+
+  transition: border-color var(--anim-fast), color var(--anim-fast);
+}
+
+.form-input:hover,
+.form-input:focus,
+.form-input:not(:placeholder-shown) {
+  border-color: var(--border-cl-selected);
+}
+
+.form-caption {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--secondary-txt--mode-dark);
+
+  transition: transform var(--anim-fast), color var(--anim-fast);
+}
+
+.form-input:focus + .form-caption,
+.form-input:not(:placeholder-shown) + .form-caption {
+  color: var(--primary-txt--mode-dark);
+  transform: translate(-10px, -20px) scale(0.7);
+}
+
+.form-message {
+  display: block;
+  width: 100%;
+  padding: 10px;
+
+  color: var(--primary-txt--mode-dark);
+  background-color: transparent;
+  outline: transparent;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  transition: border-color 300ms ease-in, color 300ms ease-in;
+}
+
+.form-message:hover,
+.form-message:focus,
+.form-message:not(:placeholder-shown),
+.form-message:hover + .form-caption {
+  border-color: var(--border-cl-selected);
+}
+
+.form-message::placeholder {
+  color: var(--secondary-txt--mode-dark);
+  opacity: 0;
+  transform: scale(0.5);
+  transform-origin: left;
+}
+
+.form-message:focus::placeholder {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity var(--anim-slow) 200ms, transform var(--anim-slow) 200ms;
+}
+
+.form-message:focus + .form-caption,
+.form-message:not(:placeholder-shown) + .form-caption {
+  color: var(--primary-txt--mode-dark);
+  transform: translate(-10px, -20px) scale(0.7);
+}
+
+.form-agreement-link {
+  color: var(--accent-cl);
+}
+
+.form-btn {
+  opacity: 1;
+  transition: opacity var(--anim-slow);
+}
+
+.form-btn:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}

@@ -1,0 +1,82 @@
+/* Contacts */
+.contacts {
+  background-color: var(--secondary-bg--mode-dark);
+  background-image: linear-gradient(
+      to right,
+      var(--secondary-bg--mode-dark),
+      var(--secondary-bg--mode-dark)
+    ),
+    url(../images/contacts/contacts-bg.png);
+  background-position: top left, top calc(50%) left calc(50% + 312px);
+  background-repeat: no-repeat;
+  background-size: 50%, cover;
+}
+
+.contacts-container {
+  display: flex;
+}
+.contacts-left-side,
+.contacts-right-side {
+  flex-basis: calc(100% / 2 - 40px);
+}
+
+.contacts-left-side {
+  margin-right: 40px;
+}
+
+.contacts-right-side {
+  padding-left: 100px;
+}
+
+.contacts-list,
+.contacts-schedule {
+  color: var(--main-txt--mode-dark);
+}
+
+.contacts-list {
+  width: 270px;
+  margin-bottom: 70px;
+}
+
+.contacts-item {
+  margin-bottom: 20px;
+}
+
+.contacts-item:last-child {
+  margin-bottom: 0;
+}
+
+.contacts-address,
+.contacts-link {
+  display: flex;
+
+  font-style: normal;
+  color: currentColor;
+}
+
+.contacts-icon {
+  position: relative;
+  top: 3px;
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
+/**
+|--------------------------------------------------
+| селектор ссылки по атрибуту, который начинается
+| со слова "mailto:"
+|--------------------------------------------------
+*/
+.contacts-link[href^="mailto:"] {
+  text-decoration: underline;
+}
+
+.contacts .uppertitle-mode-dark {
+  /**
+|--------------------------------------------------
+| переопределение переменной для верхнего заголовка
+| только внутри секции contacts
+|--------------------------------------------------
+*/
+  --secondary-txt--mode-dark: #ffffff;
+}

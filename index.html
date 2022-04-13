@@ -19,7 +19,11 @@
     />
 
     <!-- Кастомні стили -->
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- після організації архітектури файлів scss посилання на старинй файл стилів видаляемо -->
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+
+    <!-- не забути підключити новий лінк зі стилями -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!-- Шапка сайту -->
@@ -65,7 +69,7 @@
       </div>
     </header>
 
-    <div class="contacts-row container">
+    <!-- <div class="contacts-row container">
       <ul class="list">
         <li class="item">
           <a class="link" href="">
@@ -88,12 +92,12 @@
           </a>
         </li>
       </ul>
-    </div>
+    </div> -->
 
     <!-- Уникальный контент -->
     <main>
       <!-- Секція Герой -->
-      <section class="hero">
+      <!-- <section class="hero">
         <div class="container">
           <ul class="list hero__list">
             <li class="hero__item">
@@ -123,7 +127,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Про нас -->
       <section class="about section">
@@ -275,7 +279,7 @@
           </p>
           <h2 class="title title--mode-light">Наши мастера</h2>
           <ul class="team-list list">
-            <li class="team-member">
+            <li class="team-member team-member--primary">
               <div class="team-thumb">
                 <img
                   class="team-avatar"
@@ -340,7 +344,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-member team-member--accent">
               <div class="team-thumb">
                 <img
                   class="team-avatar"
@@ -390,7 +394,7 @@
                 </ul>
               </div>
             </li>
-            <li class="team-member">
+            <li class="team-member team-member--secondary">
               <div class="team-thumb">
                 <img
                   class="team-avatar"
