@@ -1,0 +1,89 @@
+/* Price */
+.price {
+  background-color: var(--secondary-bg--mode-dark);
+
+  background-image: url(../images/price/bg-price.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.price .title {
+  margin-bottom: 44px;
+}
+
+.price-list {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 50px;
+}
+
+.price-item {
+  /* outline: 1px solid red; */
+  flex-basis: calc(100% / 2);
+  padding: 30px 40px;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.price-item-left-side {
+  background-image: linear-gradient(
+    180deg,
+    #171a24 0%,
+    rgba(23, 26, 36, 0.2) 100%
+  );
+}
+
+.price-item-right-side {
+  background-image: linear-gradient(
+    180deg,
+    #090b13 0%,
+    rgba(9, 11, 19, 0.2) 100%
+  );
+}
+
+.price-inner-item {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: baseline;
+  margin-bottom: 20px;
+}
+
+.price-inner-item:last-child {
+  margin-bottom: 0;
+}
+
+.price-inner-item::after {
+  content: "";
+  display: block;
+  margin: 0 6px;
+  /* width: 100%; */
+  height: 1px;
+
+  background-color: rgba(157, 164, 189, 0.12);
+
+  /* Вариант оформления через свойство элемента занимать
+  все доступное пространство внутри флекс-контейнера */
+  flex-grow: 1;
+}
+
+.price-inner-name,
+.price-inner-cost {
+  color: var(--main-txt--mode-dark);
+
+  /* Вариант оформления через запрет на сжатие элемента
+  внутри флекс-контейнера */
+  flex-shrink: 0;
+}
+
+.price-inner-cost {
+  /* Изменение порядка элемента внутри флекс-контейнера
+  чем больше значение, тем дальше элемент в очереди */
+  order: 2;
+}
+
+.price .main-btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

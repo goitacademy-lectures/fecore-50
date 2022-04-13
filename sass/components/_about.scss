@@ -1,0 +1,30 @@
+/* About us */
+.about-container {
+  display: flex;
+}
+
+.about-list {
+  display: flex;
+}
+
+.about-item {
+  margin-right: 30px;
+}
+.about-item:last-child {
+  margin-right: 0;
+}
+
+.about-wrapper {
+  width: 500px;
+  margin-left: auto;
+}
+
+.about-descr {
+  margin-bottom: 40px;
+
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  color: var(--main-txt--mode-light);
+}

@@ -1,0 +1,89 @@
+/* pulsation animation for button */
+.pulsate {
+  position: relative;
+  z-index: 10;
+
+  background-color: #ff6c00;
+}
+
+.pulsate span {
+  position: relative;
+  z-index: 10;
+}
+
+.pulsate::after,
+.pulsate::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+
+  background-color: rgb(255, 106, 0);
+}
+
+.pulsate::after {
+  animation: pulsation 4s 400ms ease-in-out infinite both;
+}
+.pulsate::before {
+  animation: pulsation 4s ease-in-out infinite both;
+}
+
+@keyframes pulsation {
+  0% {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0.8;
+  }
+  80% {
+    transform: translate(-50%, -50%) scale(1.4);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.4);
+    opacity: 0;
+  }
+}
+
+/* logo anomation */
+@keyframes bounce-top {
+  0% {
+    transform: translateY(-45px);
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    transform: translateY(-24px);
+    animation-timing-function: ease-in;
+  }
+  65% {
+    transform: translateY(-12px);
+    animation-timing-function: ease-in;
+  }
+  82% {
+    transform: translateY(-6px);
+    animation-timing-function: ease-in;
+  }
+  93% {
+    transform: translateY(-4px);
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+  }
+  100% {
+    transform: translateY(0px);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}

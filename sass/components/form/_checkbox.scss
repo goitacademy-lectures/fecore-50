@@ -1,0 +1,50 @@
+/**
+|--------------------------------------------------
+| стилизация чекбокса
+|--------------------------------------------------
+*/
+.form-agreement {
+  position: relative;
+  display: flex;
+
+  font-size: 16px;
+}
+
+.form-agreement-input {
+  position: absolute;
+  top: -20px;
+}
+
+.form-agreement-checkbox {
+  --checkbox-body: var(--checkbox-accent);
+  flex-shrink: 0;
+  margin-right: 12px;
+
+  border-radius: 3px;
+  outline: transparent;
+  cursor: pointer;
+  transition: background-color var(--anim-slow);
+
+  &:hover,
+  &:focus {
+    background-color: var(--checkbox-hover);
+  }
+
+  & > #icon-checked {
+    opacity: 0;
+    transition: opacity var(--anim-fast);
+  }
+
+  & > #icon-outline {
+    opacity: 1;
+    transition: opacity var(--anim-fast);
+  }
+
+  .form-agreement-input:checked + & > #icon-checked {
+    opacity: 1;
+  }
+
+  .form-agreement-input:checked + & > #icon-outline {
+    opacity: 0;
+  }
+}

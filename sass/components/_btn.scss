@@ -1,0 +1,25 @@
+@import "../utils/btn-placeholder";
+
+.main-btn {
+  @extend %btn;
+
+  @include btn-size(small);
+
+  &--mode-light {
+    color: $primary-txt--mode-light;
+  }
+
+  &--mode-dark {
+    color: var(--primary-txt--mode-dark);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-cl);
+    border-color: var(--accent-cl);
+  }
+}
+
+.secondary-btn {
+  @include btn-size(large);
+}

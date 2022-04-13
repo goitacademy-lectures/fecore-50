@@ -1,0 +1,27 @@
+// variables
+@import "./variables/variables";
+
+// utils
+@import "./utils/mixins";
+@import "./utils/visually-hidden";
+@import "./utils/animation-pulsate";
+
+// base styles
+@import "./base/base";
+
+// conponents main page
+@import "./components/btn";
+@import "./components/form/module";
+@import "./components/modal";
+@import "./components/container";
+
+@import "./components/header";
+@import "./components/hero";
+@import "./components/about";
+@import "./components/price";
+@import "./components/advantages";
+@import "./components/team";
+@import "./components/gallery";
+
+@import "./components/contacts";
+@import "./components/footer";

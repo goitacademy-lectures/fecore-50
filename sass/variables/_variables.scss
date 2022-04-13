@@ -1,0 +1,41 @@
+:root {
+  /* Основные шрифты */
+  // --main-font: "Open Sans", sans-serif;
+  // --secondary-font: "Raleway", sans-serif;
+  --accent-cl: #ff6c00;
+
+  /* Светлая тема текста */
+  // --primary-txt--mode-light: #555555;
+  --secondary-txt--mode-light: #303030;
+  --main-txt--mode-light: #555555;
+
+  /* Темная тема текста*/
+  --primary-txt--mode-dark: #ffffff;
+  --secondary-txt--mode-dark: rgba(157, 164, 189, 0.6);
+  --main-txt--mode-dark: #9da4bd;
+
+  /* Светлая тема фона*/
+  --primary-bg--mode-light: #ffffff;
+  --secondary-bg--mode-light: #f7f7f7;
+
+  /* Темная тема фона*/
+  --primary-bg--mode-dark: #191c26;
+  --secondary-bg--mode-dark: #111319;
+
+  /* Остальные эффекты */
+  --border-cl-unselected: rgba(157, 164, 189, 0.4);
+  --border-cl-selected: #ffffff;
+
+  --checkbox-accent: #ff6c00;
+  --checkbox-hover: #555555;
+
+  --anim-fast: 250ms ease-in;
+  --anim-slow: 500ms ease-in-out;
+}
+
+// Змінні SASS
+$main-font: "Open Sans", sans-serif;
+$secondary-font: "Raleway", sans-serif;
+
+
+$primary-txt--mode-light: #555555;
