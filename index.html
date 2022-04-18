@@ -38,6 +38,24 @@
             height="55"
           />
         </a>
+        <button
+          class="menu-btn"
+          type="button"
+          aria-label="Кнопка открытия меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="menu-btn__icon" width="44" height="44">
+            <use
+              class="menu-btn__icon-open"
+              href="./images/icons.svg#open-menu-icon"
+            ></use>
+            <use
+              class="menu-btn__icon-close"
+              href="./images/icons.svg#close-menu-icon"
+            ></use>
+          </svg>
+        </button>
         <nav class="nav">
           <ul class="list nav__list">
             <li class="nav__item">
@@ -130,7 +148,7 @@
       </section> -->
 
       <!-- Секція Про нас -->
-      <section class="about section">
+      <!-- <section class="about section">
         <div class="container about-container">
           <ul class="about-list list">
             <li class="about-item">
@@ -173,10 +191,10 @@
             </button>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Послуги та ціни -->
-      <section class="price section">
+      <!-- <section class="price section">
         <div class="container">
           <p class="uppertitle uppertitle--mode-dark">
             Проведи время в компании лучших мастеров
@@ -230,10 +248,10 @@
             онлайн-запись
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Переваги -->
-      <section class="advantages section">
+      <!-- <section class="advantages section">
         <div class="container advantages-container">
           <div class="advantages-left-side">
             <ul class="advantages-list list">
@@ -269,10 +287,10 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Майстри -->
-      <section class="team section">
+      <!-- <section class="team section">
         <div class="container">
           <p class="uppertitle uppertitle--mode-light">
             для настоящих ценителей атмосферы
@@ -445,10 +463,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Галерея -->
-      <section class="gallery section">
+      <!-- <section class="gallery section">
         <div class="container">
           <p class="uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
@@ -493,10 +511,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Секція Контакти -->
-      <section class="contacts section">
+      <!-- <section class="contacts section">
         <div class="container contacts-container">
           <div class="contacts-left-side">
             <h2 class="title title--mode-dark">Онлайн-запись</h2>
@@ -565,15 +583,6 @@
                   >
                 </span>
               </label>
-
-              <!-- <div class="switcher">
-              <label class="form-switcher">
-                <input class="form-switcher-input" type="checkbox">
-                <span class="toggler"></span>
-                <span class="cirle" role="checkbox"></span>
-              </label>
-              <span class="form-switcher-text">Off</span>
-             </div> -->
               <button
                 class="main-btn main-btn--mode-dark form-btn"
                 type="submit"
@@ -621,11 +630,11 @@
             </p>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Підвал сайту -->
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer-container">
         <p class="footer-copyright">&#169; Copyright 2020</p>
         <ul class="footer-list list">
@@ -637,10 +646,10 @@
           </li>
         </ul>
       </div>
-    </footer>
+    </footer> -->
 
     <!-- Модальне вікно -->
-    <div class="backdrop is-hidden" data-modal>
+    <!-- <div class="backdrop is-hidden" data-modal>
       <div class="modal-wrapper">
         <button class="modal-btn" type="button" data-modal-close>X</button>
         <p>
@@ -648,9 +657,60 @@
           ipsum.
         </p>
       </div>
-    </div>
+    </div> -->
 
+    <!-- Мобільне меню -->
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list list">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="">О нас</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="">Услуги и цены</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="">Мастера</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link link" href="">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="mobile-menu__contacts">
+          <a class="mobile-menu__link link" href="tel:+380441111111"
+            >+38 044 111 11 11</a
+          >
+          <button class="mobile-menu__btn">онлайн-запись</button>
+        </div>
+
+        <ul class="socials">
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+
+          <li class="socials__item">
+            <a
+              class="socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Youtube</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
     <script src="./js/form-btn.js"></script>
   </body>
 </html>

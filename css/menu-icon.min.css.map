@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../sass/components/menu-icon.scss"
+    ],
+    "names": [],
+    "file": "menu-icon.min.css"
+}

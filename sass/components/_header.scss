@@ -1,16 +1,30 @@
 /* Header */
 .header {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   background-color: var(--primary-bg--mode-dark);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 
   &__container {
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 767px) {
+      justify-content: space-between;
+    }
   }
 
   &__link {
-    margin-right: 70px;
+    @media screen and (min-width: 767px) {
+      margin-right: 64px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
   }
 
   &__logo {
@@ -19,13 +33,19 @@
 
   &__wrapper {
     display: flex;
+    flex-direction: column-reverse;
     align-items: center;
     margin-left: auto;
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+    }
   }
 
   &__phone {
-    margin-right: 40px;
-
     flex-shrink: 0;
 
     font-weight: 600;
@@ -41,6 +61,20 @@
     &:focus {
       color: var(--accent-cl);
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+      margin-top: 20px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 40px;
+    }
+  }
+}
+
+.nav {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -50,7 +84,11 @@
 }
 
 .nav__item {
-  margin-right: 40px;
+  margin-right: 24px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 40px;
+  }
 
   &:last-child {
     margin: 0;
@@ -70,5 +108,32 @@
   &:hover,
   &:focus {
     color: var(--accent-cl);
+  }
+}
+
+// for mobile screns only
+@media screen and (max-width: 767px) {
+  .header {
+    background-color: var(--primary-bg--mode-dark);
+  }
+}
+
+// for tablets screns only
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .header {
+    background-color: var(--primary-bg--mode-dark);
+  }
+}
+
+// for tablets screns and wider
+@media screen and (min-width: 768px) {
+  .header {
+    background-color: var(--primary-bg--mode-dark);
+  }
+}
+// for desktop screns and wider
+@media screen and (min-width: 1200px) {
+  .header {
+    background-color: var(--primary-bg--mode-dark);
   }
 }
