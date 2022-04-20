@@ -8,14 +8,21 @@
 
   // outline: 1px solid red;
 
-  @media screen and(min-width:768px) {
-    max-width: 768px;
+  @media screen and (min-width:768px) {
+    // max-width: 768px;
     // width: 768px;
+    // padding-left: 39px;
+    // padding-right: 39px;
+  }
+
+  // Застосування медіаправил через міксін
+  @include mq(tablet) {
+    max-width: 768px;
     padding-left: 39px;
     padding-right: 39px;
   }
 
-  @media screen and(min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1200px;
     // width: 1200px;
     padding-left: 15px;

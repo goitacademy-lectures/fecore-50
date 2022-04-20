@@ -2,10 +2,47 @@
 .price {
   background-color: var(--secondary-bg--mode-dark);
 
-  background-image: url(../images/price/bg-price.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+
+  // Ретінізація фонових зображень + підтримка формату webp
+  background-image: url(../images/price/bg-price_sm.png);
+  background-image: -webkit-image-set(
+    url(../images/price/bg-price_sm.webp) 1x
+  );
+  @include mq(retina) {
+    background-image: url(../images/price/bg-price_sm@2x.png);
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price_sm@2x.webp) 2x
+    );
+  }
+
+  @include mq(tablet) {
+    background-image: url(../images/price/bg-price_md.png);
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price_md.webp) 1x
+    );
+    @include mq(retina) {
+      background-image: url(../images/price/bg-price_md@2x.png);
+      background-image: -webkit-image-set(
+        url(../images/price/bg-price_md@2x.webp) 2x
+      );
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(../images/price/bg-price_lg.png);
+    background-image: -webkit-image-set(
+      url(../images/price/bg-price_lg.webp) 1x
+    );
+    @include mq(retina) {
+      background-image: url(../images/price/bg-price_lg@2x.png);
+      background-image: -webkit-image-set(
+        url(../images/price/bg-price_lg@2x.webp) 2x
+      );
+    }
+  }
 }
 
 .price .title {

@@ -466,7 +466,7 @@
       </section> -->
 
       <!-- Секція Галерея -->
-      <!-- <section class="gallery section">
+      <section class="gallery section">
         <div class="container">
           <p class="uppertitle uppertitle--mode-light">
             На латинском языке “барба” означает “борода”
@@ -474,20 +474,67 @@
           <h2 hidden>Галерея Барбершопа</h2>
           <ul class="gallery-list list">
             <li class="gallery-item">
-              <img
-                class="gallery-img"
-                src="./images/gallery/pic-1.jpg"
-                alt=""
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/gallery/pic-1_lg.webp    1x,
+                    ./images/gallery/pic-1_lg@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/pic-1_lg.jpg    1x,
+                    ./images/gallery/pic-1_lg@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/pic-1_md.webp    1x,
+                    ./images/gallery/pic-1_md@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/pic-1_md.jpg    1x,
+                    ./images/gallery/pic-1_md@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/gallery/pic-1_sm.webp    1x,
+                    ./images/gallery/pic-1_sm@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/gallery/pic-1_sm@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="gallery-img"
+                  src="./images/gallery/pic-1_sm.jpg"
+                  alt=""
+                  width="418"
+                  height="360"
+                />
+              </picture>
             </li>
-            <li class="gallery-item">
+            <!-- <li class="gallery-item">
               <img
                 class="gallery-img"
                 src="./images/gallery/pic-2.jpg"
                 alt=""
-                width="270"
+                width="418"
                 height="360"
               />
             </li>
@@ -496,7 +543,7 @@
                 class="gallery-img"
                 src="./images/gallery/pic-3.jpg"
                 alt=""
-                width="270"
+                width="418"
                 height="360"
               />
             </li>
@@ -505,13 +552,13 @@
                 class="gallery-img"
                 src="./images/gallery/pic-4.jpg"
                 alt=""
-                width="270"
+                width="418"
                 height="360"
               />
-            </li>
+            </li> -->
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Секція Контакти -->
       <!-- <section class="contacts section">
