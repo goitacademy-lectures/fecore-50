@@ -1,0 +1,303 @@
+body {
+  height: 300vh;
+}
+
+.no-scroll {
+  overflow-y: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ececec;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+
+  color: #2196f3;
+}
+
+.logo-accent {
+  color: #212121;
+}
+
+.mobile-menu-btn {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.icon-open {
+  opacity: 1;
+  transform: scale(1) rotate(0) translateY(0);
+  transform-origin: center;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+
+.mobile-menu-btn.is-active .icon-open {
+  opacity: 0;
+  transform: scale(0.3) rotate(90deg) translateY(100%);
+}
+
+.icon-close {
+  opacity: 0;
+  transform: scale(0.3) rotate(0);
+  transform-origin: center;
+  transition: opacity 400ms ease 300ms, transform 400ms ease 300ms;
+}
+
+.mobile-menu-btn.is-active .icon-close {
+  opacity: 1;
+  transform: scale(1) rotate(2turn);
+}
+
+.nav-list {
+  display: none;
+}
+
+.header-contacts {
+  display: none;
+}
+
+.nav-item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+/* Mobile menu styles */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+
+  opacity: 0;
+  transform: translateX(100%);
+  transition: transform 400ms ease-in-out, opacity 400ms ease-in-out;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@keyframes menu {
+  0% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  50% {
+  }
+
+  100% {
+  }
+}
+
+.nav-item {
+  margin-bottom: 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+}
+
+.mobile-menu-group {
+  margin-top: auto;
+}
+
+.contacts {
+  margin-bottom: 64px;
+}
+
+.contacts-item:first-child {
+  margin-bottom: 32px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .contacts-item:first-child {
+    font-size: 34px;
+  }
+}
+
+.contacts-item:last-child {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
+}
+
+.socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -10px;
+  margin-top: -10px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
+
+  color: #2196f3;
+}
+
+.socials-item {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.socials-link {
+  display: block;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.socials-item:last-child .socials-link {
+  padding: 0;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* .nav-list {
+    display: block;
+  } */
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  .header-link {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-phone,
+  .icon-mail {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header-contacts {
+    flex-direction: row;
+
+    gap: 30px;
+  }
+
+  .icon-phone {
+    width: 10px;
+    height: 16px;
+  }
+
+  .icon-mail {
+    width: 16px;
+    height: 12px;
+  }
+}
